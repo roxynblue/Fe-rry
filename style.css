@@ -64,12 +64,12 @@
 :root{
     --primary-color-100:#fff;
     --primary-color-400:rgb(247,248,242);
-    --primary-color-500:#ebf8f5;
+    --primary-color-500:#FFE6E7;
     --primary-color-600:rgb(235,248,245);
     --primary-color-700:#797f9d;
     --primary-color-800:rgb(16,181,130);
     --primary-color-900:rgb(106,111,146);
-    --secondary-color:rgb(251,144,2);
+    --secondary-color:#D62027;
     --tertiary-color:rgb(55,60,89);
     --quaternary-color:rgb(255,148,134);
   
@@ -84,9 +84,11 @@
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1rem;
+ 
 }
 .heading p{
   color: var(--primary-color-700);
+  font-size: 1.6rem;
   font-weight: 400;
 
 }
@@ -165,7 +167,7 @@ button{
 }
 .section-desc{
   font-family: 'nunito';
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: var(--primary-color-900);
   font-weight: 400;
   line-height: 1.5;
@@ -180,12 +182,9 @@ button{
   text-align: center;
   padding-top: 7.5px;
   margin-right: 7.5px;
-  
-  
-
 }
 .svg-solution i{
-  font-weight: 600;
+  font-weight: 400;
 }
 .steps p{
   font-size: 1.1rem;
@@ -212,6 +211,11 @@ button{
   color: var(--tertiary-color);
   font-weight: 600;
   margin: 7.5px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
 }
 
 .reveal{
@@ -272,7 +276,7 @@ section{
   /* For tablets: */
 
   .heading h1{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
   .solution-container{
     padding: 2% 2%;
@@ -376,4 +380,41 @@ section{
   color: var(--primary-color-100);
   font-weight: 600;
 
+}
+
+.team4 {
+	color: var(--primary-color-900);
+  font-weight: 400;
+}
+
+.team4 h1, .team4 h2, .team4 h3, .team4 h4, .team4 h5, .team4 h6 {
+  color: #3e4555;
+}
+
+.team4 .font-weight-medium {
+	font-weight: 500;
+}
+
+.team4 h5 {
+    font-size: 1.5rem;
+}
+
+.team4 .subtitle {
+    color: #8d97ad;
+    line-height: 24px;
+		font-size: 13px;
+}
+
+.team4 ul li a {
+  color: #8d97ad;
+  padding-right: 15px;
+  -webkit-transition: 0.1s ease-in;
+  -o-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+}
+
+.team4 ul li a:hover {
+  -webkit-transform: translate3d(0px, -5px, 0px);
+  transform: translate3d(0px, -5px, 0px);
+	color: #316ce8;
 }
