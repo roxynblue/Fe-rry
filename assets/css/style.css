@@ -76,6 +76,88 @@
 }
 
 
+/*Search container*/
+
+.search-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.search-container input {
+    width: 80%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/*Adding the container format for cards-tiles/ */
+.blog-tile-container {
+    width: 80%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.blog-tile {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.blog-tile:hover {
+    transform: scale(1.05);
+}
+
+.blog-tile img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.blog-info {
+    padding: 20px;
+}
+
+.blog-info h2 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+}
+
+.blog-info p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.blog-info .author-date {
+    font-size: 0.9rem;
+    color: #999;
+}
+
+/* Media Query for smaller screens (mobiles) 
+@media (max-width: 768px) {
+    .search-container input {
+        width: 80%; /* Search bar adapts to smaller width 
+    }
+
+    .container {
+        grid-template-columns: 1fr; /* Stack tiles in a single column 
+    }
+
+    .blog-tile img {
+        height: 150px; /* Reduce image height on mobile 
+    }
+
+    .blog-info h2 {
+        font-size: 1.2rem; /* Slightly smaller title on mobile 
+    }
+}
+
+/* here end tile edits*/
+
 
 .heading h1{
   font-family: 'Poppins';
@@ -317,7 +399,7 @@ section{
     display: flex;
     flex-direction: row;
     position: relative;
-    left: 150px;
+    left: 0px;
   }
   .mobile-footer ul{
     display: flex;
@@ -327,10 +409,26 @@ section{
   }
   p.text-muted{
     position: relative;
-    left: 130px;
+    left: 0px;
     text-align: center;
   }
   
+  .search-container input {
+      width: 80%; /* Search bar adapts to smaller width */
+  }
+  
+  .blog-tile-container {
+      grid-template-columns: 1fr; /* Stack tiles in a single column */
+  }
+  
+  .blog-tile img {
+      height: 150px; /* Reduce image height on mobile */
+  }
+  
+  .blog-info h2 {
+      font-size: 1.2rem; /* Slightly smaller title on mobile */
+  }
+
 
 }
 

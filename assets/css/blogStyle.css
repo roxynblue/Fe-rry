@@ -1,0 +1,22 @@
+/* Blog page container */
+.blog-container {
+    max-width: 800px;       /* Limits the width to 800px for readability */
+    margin: 0 auto;         /* Centers the container horizontally */
+    padding: 20px;          /* Adds some padding around the content */
+}
+
+/* Blog title and content styles */
+.blog-header {
+    text-align: left;       /* Keeps title, subtitle, and author info left-aligned */
+}
+
+.blog-content {
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.blog-image {
+    width: 100%;
+    margin: 20px 0;
+}
