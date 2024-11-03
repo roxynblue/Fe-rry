@@ -39,6 +39,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     gap: 10px; /* Space between keyword tags */
+    margin-top: 50px; /* Adjust value as needed */
 }
 
 .keyword {
@@ -50,6 +51,7 @@ h2 {
     font-size: 0.9em;          /* Slightly smaller font size */
     font-weight: 400;          /* Semi-bold font for emphasis */
     display: inline-block;
+
 }
 
 
