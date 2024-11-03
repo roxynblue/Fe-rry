@@ -1,0 +1,138 @@
+/* Blog page container */
+.blog-container {
+    max-width: 800px;       /* Limits the width to 800px for readability */
+    margin: 0 auto;         /* Centers the container horizontally */
+    padding: 20px;          /* Adds some padding around the content */
+}
+
+/* Blog title and content styles */
+.blog-header {
+    text-align: left;
+    font-family: "Nunito"/* Keeps title, subtitle, and author info left-aligned */
+}
+
+.blog-title {
+    font-weight: 700;
+}
+
+
+
+.blog-content {
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: left;
+
+
+h2 {
+    margin-top: 50px; /* Adjust value as needed */
+}
+
+}
+
+.blog-image {
+    width: 100%;
+    margin: 20px 0;
+}
+
+
+.keywords {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between keyword tags */
+    margin-top: 50px; /* Adjust value as needed */
+}
+
+.keyword {
+    /*background-color: #f0f0f0; /* Light grey background */
+    color: #797F9D;               /* Dark grey font color */
+    padding: 6px 12px;         /* Padding inside each tag */
+    border-radius: 40px;       /* Rounded corners */
+    border: 1px solid #000000;
+    font-size: 0.9em;          /* Slightly smaller font size */
+    font-weight: 400;          /* Semi-bold font for emphasis */
+    display: inline-block;
+
+}
+
+
+.author-section {
+    display: flex;                 /* Puts the image and text side-by-side */
+    align-items: center;           /* Aligns items vertically */
+    gap: 15px;                     /* Space between photo and text */
+    padding: 10px;                 /* Padding around the section */
+}
+
+.author-photo {
+    width: 100px;                   /* Adjust size as needed */
+    height: 100px;
+    border-radius: 50%;            /* Makes the image circular */
+    object-fit: cover;             /* Ensures the photo doesn’t distort */
+    /*border: 3px solid #00796b;     /* Optional border for style */
+}
+
+.author-info {
+    display: flex;
+    flex-direction: column;        /* Stacks text vertically */
+    line-height: 1.2;
+}
+
+.author-byline {
+    font-size: 0.9em;              /* Smaller font for ‘Article by’ */
+    color: #666;                   /* Grey color for subtler text */
+}
+
+.author-name {
+    font-size: 2em;              /* Larger font for the author’s name */
+    font-weight: bold;             /* Bold for emphasis */
+    color: #000000;                /* Dark blue for the author name */
+}
+
+.author-title {
+    font-size: 0.9em;              /* Smaller font for title */
+    color: #444;                   /* Slightly darker color */
+    font-style: italic;            /* Italic style for the title */
+}
+
+
+.also-read {
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid #ddd; /* Adds a border to separate the section */
+}
+
+.also-read h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.carousel {
+    display: flex;                   /* Arranges items horizontally */
+    gap: 20px;                       /* Space between items */
+    overflow-x: auto;                /* Enables horizontal scrolling */
+    scroll-snap-type: x mandatory;   /* Smooth scroll snap */
+    padding-bottom: 10px;
+}
+
+.carousel-item {
+    min-width: 200px;                /* Set a fixed width for each item */
+    scroll-snap-align: start;        /* Aligns items to the start */
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for each item */
+}
+
+.carousel-item img {
+    width: 100%;                     /* Image fills the item width */
+    height: 120px;                   /* Fixed height for consistent size */
+    object-fit: cover;               /* Keeps aspect ratio */
+    border-radius: 5px;
+}
+
+.carousel-item p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #00796b;                  /* Adjust font color */
+}
